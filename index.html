@@ -12,12 +12,18 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <h1>Book Library</h1>
     <div class="container">
       <div class="bookList"></div>
-      <div class="bookForm">
+      <div class="bookForm hide">
         <h2>Book Information</h2>
         <form action="">
           <label for="title">Book Name:</label>
@@ -29,13 +35,12 @@
           <label for="pages">Number of Pages:</label>
           <input type="number" name="pages" id="pages" />
           <br />
-          <label for="haveRead">Have you read this book?</label>
-          <input type="checkbox" name="haveRead" id="haveRead" />
-          <br />
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" id="bookSubmit" class="btn-primary">Submit</button>
         </form>
       </div>
-      <button class="btn" type="button">New Book</button>
+    </div>
+    <div class="containerTwo">
+      <button class="btn" id="hide" type="button">New Book</button>
     </div>
     <script src="app.js"></script>
   </body>
