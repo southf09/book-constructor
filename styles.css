@@ -16,16 +16,45 @@ h1 {
 }
 
 .container {
+  display: grid;
   width: 60%;
-  height: 750px;
+  height: 700px;
   border: 1px solid black;
   margin: 3rem auto;
+  padding-bottom: 0;
 }
 
-.container div {
+.bookList div {
+  color: white;
+  text-align: center;
   display: inline-block;
   height: 200px;
   width: 150px;
-  border: 1px solid white;
+  border: 2px solid white;
+  border-radius: 15px;
   margin: 1rem 2rem;
+}
+
+.bookForm {
+  margin: auto;
+  display: none;
+}
+
+.btn {
+  margin: auto;
+  height: 2rem;
+  width: 10rem;
+  background-color: #0096c7;
+  border: 2px solid #90e0ef;
+  border-radius: 10px;
+  color: #ade8f4;
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  border: 2px solid #90e0ef;
+  background-color: #00b4d8;
+  color: white;
+  box-shadow: 10px 5px 5px #ade8f4;
+  cursor: pointer;
 }
