@@ -5,6 +5,7 @@
 
 body {
   background-color: #0096c7;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 h1 {
@@ -19,24 +20,42 @@ h1 {
   display: grid;
   width: 60%;
   height: 700px;
-  border: 1px solid black;
-  margin: 3rem auto;
+  border: 2px solid #0077b6;
+  border-radius: 25px;
+  margin: 3rem auto 1rem;
   padding-bottom: 0;
 }
 
+.containerTwo {
+  display: grid;
+  width: 60%;
+  margin: 0 auto;
+}
+
 .bookList div {
-  color: white;
-  text-align: center;
+  color: #ade8f4;
+  text-align: left;
   display: inline-block;
-  height: 200px;
+  height: 150px;
   width: 150px;
-  border: 2px solid white;
+  /* border: 2px solid #ade8f4; */
   border-radius: 15px;
   margin: 1rem 2rem;
+  padding-left: 1rem;
 }
 
 .bookForm {
   margin: auto;
+  padding: 1rem;
+  border: 2px solid #90e0ef;
+  color: white;
+}
+
+.bookForm h2 {
+  text-align: center;
+}
+
+.hide {
   display: none;
 }
 
@@ -49,6 +68,7 @@ h1 {
   border-radius: 10px;
   color: #ade8f4;
   font-size: 1.2rem;
+  position: relative;
 }
 
 .btn:hover {
@@ -57,4 +77,51 @@ h1 {
   color: white;
   box-shadow: 10px 5px 5px #ade8f4;
   cursor: pointer;
+}
+
+.btn-primary {
+  margin: auto;
+  height: 1.5rem;
+  width: 5rem;
+  background-color: #0096c7;
+  border: 2px solid #90e0ef;
+  border-radius: 10px;
+  color: #ade8f4;
+  font-size: 1rem;
+  position: relative;
+}
+
+.btn-primary:hover {
+  border: 2px solid #90e0ef;
+  background-color: #00b4d8;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  margin: auto;
+  height: 1.5rem;
+  width: 5rem;
+  background-color: #0096c7;
+  border: 2px solid #90e0ef;
+  border-radius: 10px;
+  color: #ade8f4;
+  font-size: 1rem;
+  position: relative;
+}
+
+.btn-secondary:hover {
+  border: 2px solid #90e0ef;
+  background-color: #00b4d8;
+  color: white;
+  cursor: pointer;
+}
+
+br {
+  margin: 0.5rem;
+}
+
+.read {
+  color: greenyellow;
+  border: 2px solid green;
 }
